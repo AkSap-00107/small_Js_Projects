@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: Anta;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.container
+{
+    /* width: 40%; */
+    height: min-content;
+    background-color: white;
+    border-radius: 0.8rem;
+    padding: 1.6rem;
+}
+.search-box
+{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-box input{
+    width: 84%;
+    font-size: 1.6rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.6rem;
+    background-color: #e6f5fb;
+    color: black;
+    text-transform: capitalize;
+}
+.search-box input::placeholder{
+    color: black;
+}
+.search-box button
+{
+    width: 3rem;
+    height: 3rem;
+    background-color: #e6f5fb;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+.search-box button:hover
+{
+    color: beige;
+    background-color: rgb(107, 106, 104);
+}
+@media (max-width:550px) {
+    #ak{
+        width: 94%;
+    }
+}
+@media (min-width:550px) {
+    #ak{
+        width: 60%;
+    }
+}
+@media (min-width:920px) {
+    #ak{
+        width: 40%;
+    }
+}
+.location-not-found
+{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+.location-not-found h2{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #6b6b6b;
+}
+.wether-body
+{
+    display: none;
+    flex-direction: column  ;
+    justify-content: center;
+    align-items: center;
+}
+.wether-body img
+{
+    width: 60%;
+}
+.wether-box
+{
+    margin: 1.6rem;
+    text-align: center;
+}
+.wether-box .temperature{
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+}
+.wether-box sup{
+    font-size: 1.3rem;
+    font-weight: 500;
+    position: absolute;
+}
+.wether-box .description
+{
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: capitalize;   
+}
+.wether-details
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+.humidity, .wind
+{
+    display: flex;
+    align-items: center;
+}
+.wether-details .i{
+    font-size: 2.6rem;
+}
+.text
+{
+    margin-left:1rem ;
+}
+.text span{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
