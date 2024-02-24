@@ -9,7 +9,7 @@ const locationNotFound=document.querySelector(".location-not-found");
 const wetherBody=document.querySelector(".wether-body");
 
 async function cheackWether(city) {
-  const apiKey = "0d38ec4f0d697eb855f18e1d9a399a08";
+  const apiKey = "xxxxxxxxxxxxxxxxxxxxxxxxxx";
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
   const wetherData = await fetch(`${url}`).then((response) => response.json());
   if (wetherData.cod === `404`) {
